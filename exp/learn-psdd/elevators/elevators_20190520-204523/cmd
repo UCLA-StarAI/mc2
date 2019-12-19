@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/elevators/elevators_20190520-185859/elevators.vtree -m l-1 -o exp/learn-psdd/elevators/elevators_20190520-204523 -d exp/learn-psdd/elevators/elevators_20190520-204523/elevators.train -b exp/learn-psdd/elevators/elevators_20190520-204523/elevators.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/elevators/elevators_20190520-204523/elevators.train
+validData:	exp/learn-psdd/elevators/elevators_20190520-204523/elevators.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/elevators/elevators_20190520-185859/elevators.vtree
+psddFile:	null
+out:	exp/learn-psdd/elevators/elevators_20190520-204523

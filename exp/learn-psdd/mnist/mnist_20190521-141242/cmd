@@ -1,0 +1,8 @@
+learnPsdd search -v data/mnist/mnist.vtree -m l-1 -o exp/learn-psdd/mnist/mnist_20190521-141242 -d exp/learn-psdd/mnist/mnist_20190521-141242/mnist.train -b exp/learn-psdd/mnist/mnist_20190521-141242/mnist.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/mnist/mnist_20190521-141242/mnist.train
+validData:	exp/learn-psdd/mnist/mnist_20190521-141242/mnist.valid
+testData:	null
+vtreeFile:	data/mnist/mnist.vtree
+psddFile:	null
+out:	exp/learn-psdd/mnist/mnist_20190521-141242

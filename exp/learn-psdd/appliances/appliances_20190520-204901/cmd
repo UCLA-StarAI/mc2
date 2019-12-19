@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/appliances/appliances_20190520-180922/appliances.vtree -m l-1 -o exp/learn-psdd/appliances/appliances_20190520-204901 -d exp/learn-psdd/appliances/appliances_20190520-204901/appliances.train -b exp/learn-psdd/appliances/appliances_20190520-204901/appliances.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/appliances/appliances_20190520-204901/appliances.train
+validData:	exp/learn-psdd/appliances/appliances_20190520-204901/appliances.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/appliances/appliances_20190520-180922/appliances.vtree
+psddFile:	null
+out:	exp/learn-psdd/appliances/appliances_20190520-204901

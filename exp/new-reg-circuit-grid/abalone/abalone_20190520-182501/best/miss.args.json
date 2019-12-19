@@ -1,0 +1,1 @@
+{"dataset": "data/abalone/abalone.pklz", "output": "exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/best/", "seed": 1337, "exp_id": "12345sample", "repeat": 5, "taylor": 3, "miss_perc": [20, 40, 60, 80], "vtree": "exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree", "regression": true, "verbose": 1}

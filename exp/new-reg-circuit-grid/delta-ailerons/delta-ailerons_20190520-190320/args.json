@@ -1,0 +1,1 @@
+{"dataset": "data/delta-ailerons/delta-ailerons.pklz", "output": "exp/new-reg-circuit-grid/delta-ailerons", "seed": 1337, "validate_every": 5, "patience": 2, "exp_id": null, "alpha": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0], "n_iter_sl": [100], "n_iter_pl": [100], "depth": [2, 10, 20], "n_splits": [1, 3], "vtree": "balanced", "verbose": 1}

@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/insurance/insurance_20190520-184809/insurance.vtree -m l-1 -o exp/learn-psdd/insurance/insurance_20190520-204522 -d exp/learn-psdd/insurance/insurance_20190520-204522/insurance.train -b exp/learn-psdd/insurance/insurance_20190520-204522/insurance.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/insurance/insurance_20190520-204522/insurance.train
+validData:	exp/learn-psdd/insurance/insurance_20190520-204522/insurance.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/insurance/insurance_20190520-184809/insurance.vtree
+psddFile:	null
+out:	exp/learn-psdd/insurance/insurance_20190520-204522

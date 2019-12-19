@@ -1,0 +1,104 @@
+ipython -- learn_circuit_pair.py data/boston/boston.pklz --n-iter-sl 30 --n-iter-pl 3 --regression
+ipython -- learn_circuit_pair.py data/ocr-letters/ocr_letters.pklz --n-iter-sl 10 --n-iter-pl 3
+
+#
+# run baselines for regression
+ipython -- reg_baselines.py data/boston/boston.pklz -m ridge dtr rf mlp -o exp/reg-baselines/
+ipython -- reg_baselines.py data/abalone/abalone.pklz -m ridge dtr rf mlp -o exp/reg-baselines/
+ipython -- reg_baselines.py data/appliances/appliances.pklz -m ridge dtr rf mlp -o exp/reg-baselines/
+ipython -- reg_baselines.py data/insurance/insurance.pklz -m ridge dtr rf mlp -o exp/reg-baselines/
+ipython -- reg_baselines.py data/kings-county/kings-county.pklz -m ridge dtr rf mlp -o exp/reg-baselines/
+
+
+#
+# learn just psdd given best disc circuit
+
+ipython -- learn_psdd.py data/boston/boston.pklz --exp-id boston_20190517-203115/best/ -o exp/reg-circuit-grid/boston/ --vtree exp/reg-circuit-grid/boston/boston_20190517-203115/boston.vtree --psdd-n-iter 200
+
+ipython -- learn_psdd.py data/abalone/abalone.pklz --exp-id abalone_20190517-235753/best/ -o exp/reg-circuit-grid/abalone/ --vtree exp/reg-circuit-grid/abalone/abalone_20190517-235753/abalone.vtree --psdd-n-iter 200
+
+ipython -- learn_psdd.py data/appliances/appliances.pklz --exp-id appliances_20190518-140801/best/ -o exp/reg-circuit-grid/appliances/ --vtree exp/reg-circuit-grid/appliances/appliances_20190518-140801/appliances.vtree --psdd-n-iter 200
+
+ipython -- learn_psdd.py data/insurance/insurance.pklz --exp-id insurance_20190518-073545/best/ -o exp/reg-circuit-grid/insurance/ --vtree exp/reg-circuit-grid/insurance/insurance_20190518-073545/insurance.vtree --psdd-n-iter 200
+
+ipython -- learn_psdd.py data/kings-county/kings-county.pklz --exp-id kings-county_20190517-231444/best/ -o exp/reg-circuit-grid/kings-county/ --vtree exp/reg-circuit-grid/kings-county/kings-county_20190517-231444/kings-county.vtree --psdd-n-iter 200
+
+#
+# more psdds
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/boston/boston.pklz -o exp/learn-psdd/boston --vtree exp/new-reg-circuit-grid/boston/boston_20190520-180922/boston.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/abalone/abalone.pklz -o exp/learn-psdd/abalone --vtree exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/insurance/insurance.pklz -o exp/learn-psdd/insurance --vtree exp/new-reg-circuit-grid/insurance/insurance_20190520-184809/insurance.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/delta-ailerons/delta-ailerons.pklz -o exp/learn-psdd/dealt-ailerons/ --vtree exp/new-reg-circuit-grid/delta-ailerons/delta-ailerons_20190520-190320/delta-ailerons.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/elevators/elevators.pklz -o exp/learn-psdd/elevators/ --vtree exp/new-reg-circuit-grid/elevators/elevators_20190520-185859/elevators.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/appliances/appliances.pklz -o exp/learn-psdd/appliances/ --vtree exp/new-reg-circuit-grid/appliances/appliances_20190520-185859/appliances.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/kings-county/kings-county.pklz -o exp/learn-psdd/kings-county/ --vtree exp/new-reg-circuit-grid/kings-county/kings-county_20190520-193104/kings-county.vtree --psdd-n-iter 1000
+
+/opt/miniconda3/bin/ipython3 -- learn_psdd.py data/kinematics/kinematics.pklz -o exp/learn-psdd/kinematics/ --vtree exp/new-reg-circuit-grid/kinematics/kinematics_20190520-234527/kinematics.vtree --psdd-n-iter 1000
+
+
+
+ipython -- learn_psdd.py data/elevators/elevators.pklz -o exp/new-reg-circuit-grid/elevators/elevators_20190520-185859/ --vtree exp/new-reg-circuit-grid/elevators/elevators_20190520-185859/elevators.vtree --psdd-n-iter 500
+
+
+
+
+# Missing regression
+
+ipython -- run_missing_pair.py data/boston/boston.pklz -o exp/reg-circuit-grid/boston/boston_20190517-203115/best/ --regression
+
+
+# Missing Logistic
+
+ipython -- run_missing_pair.py -o exp/test-adult/adult-test-I/ data/adult/adult.pklz
+
+
+
+
+
+
+
+#
+# on leffe, class adult
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha 0.001 --n-iter-sl 100 --n-iter-pl 100 --depth 2 10 20 --n-splits 1 3 --vtree "balanced"
+
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha  0.01 --n-iter-sl 100 --n-iter-pl 100 --depth 2 10 20 --n-splits 1 3 --vtree "balanced"
+
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha  0.1 --n-iter-sl 100 --n-iter-pl 100 --depth 2 10 20 --n-splits 1 3 --vtree "balanced"
+
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha  1 --n-iter-sl 100 --n-iter-pl 100 --depth 2 10 20 --n-splits 1 3 --vtree "balanced"
+
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha 10 --n-iter-sl 100 --n-iter-pl 100 --depth 2 10 20 --n-splits 1 3 --vtree "balanced"
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha 100 --n-iter-sl 100 --n-iter-pl 100 --depth 2 10 20 --n-splits 1 3 --vtree "balanced"
+
+
+ipython -- learn_psdd.py data/adult/adult.pklz -o exp/learn-psdd/adult/ --vtree exp/class-circuit-grid/adult/adult_20190520-214309/adult.vtree --psdd-n-iter 500
+
+#
+# more on leffe
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha 100 --n-iter-sl 200 --n-iter-pl 100 --depth 1 2 10 20 100 --n-splits 1 3 --vtree "balanced" --patience 5
+
+ipython3  --  class_circuit_grid.py  data/adult/adult.pklz  -o exp/class-circuit-grid/adult --seed 1337 --alpha 100 --n-iter-sl 200 --n-iter-pl 100 --depth 1 2 10 20 100 --n-splits 1 3 --vtree "balanced" --patience 10
+
+
+#
+# f/mnist on leffe
+ipython3 -- learn_psdd.py data/mnist/mnist.pklz -o exp/learn-psdd/mnist/ --vtree data/mnist/mnist.vtree --psdd-n-iter 1000
+
+
+ipython3 -- learn_psdd.py data/fmnist/fmnist.pklz -o exp/learn-psdd/fmnist/ --vtree data/fmnist/fmnist.vtree --psdd-n-iter 1000
+
+
+### Missing
+python run_missing_pair.py  data/abalone/abalone.pklz --regression -o exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/best/ --vtree exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree --exp-id 12345 --repeat 1 --miss-perc 5 10
+
+## plot
+
+python plot_missing_pair.py  data/abalone/abalone.pklz --regression -o exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/best/ --exp-id 12345
+
+/opt/miniconda3/bin/ipython3 -- plot_missing_pair.py  data/abalone/abalone.pklz --regression -o exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/best/ --exp-id trysample --vtree exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree --do-sample --samples 1000

@@ -1,0 +1,8 @@
+learnPsdd search -v exp/class-circuit-grid/adult/adult_20190520-214309/adult.vtree -m l-1 -o exp/learn-psdd/adult/adult_20190520-214727 -d exp/learn-psdd/adult/adult_20190520-214727/adult.train -b exp/learn-psdd/adult/adult_20190520-214727/adult.valid -e 500
+learnPsdd
+trainData:	exp/learn-psdd/adult/adult_20190520-214727/adult.train
+validData:	exp/learn-psdd/adult/adult_20190520-214727/adult.valid
+testData:	null
+vtreeFile:	exp/class-circuit-grid/adult/adult_20190520-214309/adult.vtree
+psddFile:	null
+out:	exp/learn-psdd/adult/adult_20190520-214727

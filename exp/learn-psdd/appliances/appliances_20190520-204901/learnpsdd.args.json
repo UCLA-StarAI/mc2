@@ -1,0 +1,1 @@
+{"dataset": "data/appliances/appliances.pklz", "output": "exp/learn-psdd/appliances/", "seed": 1337, "exp_id": null, "psdd_n_iter": 1000, "vtree": "exp/new-reg-circuit-grid/appliances/appliances_20190520-180922/appliances.vtree", "psdd_jar": "./exp/psdd/psdd.jar", "psdd_jar_path": "./exp/psdd/", "verbose": 1}

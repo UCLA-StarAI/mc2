@@ -1,0 +1,1 @@
+{"dataset": "data/elevators/elevators.full", "dataset_name": "elevators", "output": "data/elevators", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}

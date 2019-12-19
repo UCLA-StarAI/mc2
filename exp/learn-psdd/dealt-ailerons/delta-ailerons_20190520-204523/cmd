@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/delta-ailerons/delta-ailerons_20190520-190320/delta-ailerons.vtree -m l-1 -o exp/learn-psdd/dealt-ailerons/delta-ailerons_20190520-204523 -d exp/learn-psdd/dealt-ailerons/delta-ailerons_20190520-204523/delta-ailerons.train -b exp/learn-psdd/dealt-ailerons/delta-ailerons_20190520-204523/delta-ailerons.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/dealt-ailerons/delta-ailerons_20190520-204523/delta-ailerons.train
+validData:	exp/learn-psdd/dealt-ailerons/delta-ailerons_20190520-204523/delta-ailerons.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/delta-ailerons/delta-ailerons_20190520-190320/delta-ailerons.vtree
+psddFile:	null
+out:	exp/learn-psdd/dealt-ailerons/delta-ailerons_20190520-204523

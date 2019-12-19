@@ -1,0 +1,1 @@
+{"dataset": "data/abalone/abalone.pklz", "output": "exp/learn-psdd/abalone", "seed": 1337, "exp_id": null, "psdd_n_iter": 1000, "vtree": "exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree", "psdd_jar": "./exp/psdd/psdd.jar", "psdd_jar_path": "./exp/psdd/", "verbose": 1}

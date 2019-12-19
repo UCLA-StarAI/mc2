@@ -1,0 +1,8 @@
+learnPsdd search -v data/fmnist/fmnist.vtree -m l-1 -o exp/learn-psdd/fmnist/fmnist_20190521-141329 -d exp/learn-psdd/fmnist/fmnist_20190521-141329/fmnist.train -b exp/learn-psdd/fmnist/fmnist_20190521-141329/fmnist.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/fmnist/fmnist_20190521-141329/fmnist.train
+validData:	exp/learn-psdd/fmnist/fmnist_20190521-141329/fmnist.valid
+testData:	null
+vtreeFile:	data/fmnist/fmnist.vtree
+psddFile:	null
+out:	exp/learn-psdd/fmnist/fmnist_20190521-141329

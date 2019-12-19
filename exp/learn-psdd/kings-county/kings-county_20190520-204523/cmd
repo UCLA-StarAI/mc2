@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/kings-county/kings-county_20190520-193104/kings-county.vtree -m l-1 -o exp/learn-psdd/kings-county/kings-county_20190520-204523 -d exp/learn-psdd/kings-county/kings-county_20190520-204523/kings-county.train -b exp/learn-psdd/kings-county/kings-county_20190520-204523/kings-county.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/kings-county/kings-county_20190520-204523/kings-county.train
+validData:	exp/learn-psdd/kings-county/kings-county_20190520-204523/kings-county.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/kings-county/kings-county_20190520-193104/kings-county.vtree
+psddFile:	null
+out:	exp/learn-psdd/kings-county/kings-county_20190520-204523

@@ -1,0 +1,1 @@
+{"dataset": "data/mnist/", "dataset_name": "mnist", "output": "data/mnist", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}

@@ -1,0 +1,1 @@
+{"dataset": "data/delta-ailerons/delta-ailerons.pklz", "output": "exp/new-reg-circuit-grid/delta-ailerons/delta-ailerons_20190520-190320/best/", "seed": 1337, "exp_id": null, "repeat": 5, "taylor": 3, "miss_perc": [20, 40, 60, 80], "vtree": "exp/new-reg-circuit-grid/delta-ailerons/delta-ailerons_20190520-190320/delta-ailerons.vtree", "regression": true, "verbose": 1}

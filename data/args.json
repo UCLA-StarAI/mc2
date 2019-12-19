@@ -1,0 +1,1 @@
+{"dataset": "boston", "output": "./data/", "seed": 1337, "valid_perc": 0.2, "verbose": 1}

@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree -m l-1 -o exp/learn-psdd/abalone/abalone_20190520-204523 -d exp/learn-psdd/abalone/abalone_20190520-204523/abalone.train -b exp/learn-psdd/abalone/abalone_20190520-204523/abalone.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/abalone/abalone_20190520-204523/abalone.train
+validData:	exp/learn-psdd/abalone/abalone_20190520-204523/abalone.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/abalone/abalone_20190520-182501/abalone.vtree
+psddFile:	null
+out:	exp/learn-psdd/abalone/abalone_20190520-204523

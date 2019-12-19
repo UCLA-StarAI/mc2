@@ -1,0 +1,1 @@
+{"dataset": "data/delta-ailerons/delta-ailerons.pklz", "output": "exp/learn-psdd/dealt-ailerons/", "seed": 1337, "exp_id": null, "psdd_n_iter": 1000, "vtree": "exp/new-reg-circuit-grid/delta-ailerons/delta-ailerons_20190520-190320/delta-ailerons.vtree", "psdd_jar": "./exp/psdd/psdd.jar", "psdd_jar_path": "./exp/psdd/", "verbose": 1}

@@ -1,0 +1,1 @@
+{"dataset": "/home/emanuele/versiculi/exp-circ/data/TCGA-omnia/data_preprocessed/BRCA/X_lab_ns1_NANA_NA_NA.csv", "dataset_name": "BRCA", "output": "data/BRCA", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}

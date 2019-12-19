@@ -1,0 +1,1 @@
+{"dataset": "data/fmnist/fmnist.pklz", "output": "exp/fmnist-final", "seed": 777, "exp_id": "trial-III-90-2", "repeat": 1, "taylor": 3, "miss_perc": [90], "vtree": "exp/fmnist-final/fmnist.vtree", "regression": false, "verbose": 1}

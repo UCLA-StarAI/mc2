@@ -1,0 +1,1 @@
+{"dataset": "data/delta-ailerons/delta_ailerons.data", "dataset_name": "delta-ailerons", "output": "data/delta-ailerons", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}

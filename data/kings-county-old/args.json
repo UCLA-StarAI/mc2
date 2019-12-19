@@ -1,0 +1,1 @@
+{"dataset": "data/kings-county/kc_house_data.csv", "dataset_name": "kings-county", "output": "data/kings-county/", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}

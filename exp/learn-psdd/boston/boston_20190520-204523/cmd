@@ -1,0 +1,8 @@
+learnPsdd search -v exp/new-reg-circuit-grid/boston/boston_20190520-180922/boston.vtree -m l-1 -o exp/learn-psdd/boston/boston_20190520-204523 -d exp/learn-psdd/boston/boston_20190520-204523/boston.train -b exp/learn-psdd/boston/boston_20190520-204523/boston.valid -e 1000
+learnPsdd
+trainData:	exp/learn-psdd/boston/boston_20190520-204523/boston.train
+validData:	exp/learn-psdd/boston/boston_20190520-204523/boston.valid
+testData:	null
+vtreeFile:	exp/new-reg-circuit-grid/boston/boston_20190520-180922/boston.vtree
+psddFile:	null
+out:	exp/learn-psdd/boston/boston_20190520-204523

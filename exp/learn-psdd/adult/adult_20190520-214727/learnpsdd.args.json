@@ -1,0 +1,1 @@
+{"dataset": "data/adult/adult.pklz", "output": "exp/learn-psdd/adult/", "seed": 1337, "exp_id": null, "psdd_n_iter": 500, "vtree": "exp/class-circuit-grid/adult/adult_20190520-214309/adult.vtree", "psdd_jar": "./exp/psdd/psdd.jar", "psdd_jar_path": "./exp/psdd/", "verbose": 1}

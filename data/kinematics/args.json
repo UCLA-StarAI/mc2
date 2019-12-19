@@ -1,0 +1,1 @@
+{"dataset": "data/kinematics/kin8nm.data", "dataset_name": "kinematics", "output": "data/kinematics", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}

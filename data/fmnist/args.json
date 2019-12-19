@@ -1,0 +1,1 @@
+{"dataset": "data/fmnist/", "dataset_name": "fmnist", "output": "data/fmnist", "seed": 1337, "bins": "auto", "valid_perc": 0.2, "test_perc": 0.3, "verbose": 1}
