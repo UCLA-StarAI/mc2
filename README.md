@@ -1,6 +1,9 @@
 ## Expected Prediction and Moments for Probabilistic Circuits
 Repository for python implementation and experiments for the paper "On Tractable Computation of Expected Predictions, NeurIPS 2019".
 
+### Note:
+For a faster and well tested and documented implementation of the algorithms in this paper checkout the Juice package [ProbabilisticCircuits.jl](https://github.com/Juice-jl/ProbabilisticCircuits.jl). Also have GPU support there, so could orders of magnitude faster. This repository is only for reproducing the paper results and not maintained anymore.
+
 ### Repository Structure
 
 - `circuit_expect.py` includes the implementation of the algorithm for computing expectation and moments for pair of probabilistic circuits. This implementation uses `pypsdd` and `LogisticCircuit` libraries for learning and representing the circuits.
